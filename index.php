@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>My first PHP page</h1>
+<h1>My first PHP2 page</h1>
 
 <?php
 echo "Hello World!12345";
@@ -38,7 +38,7 @@ $conn = mysqli_connect($servername, $username, $password,$db);
 
   
    
-	$o_uid = $_POST['sql'];
+	$o_uid = "Sr";
 	echo $o_uid ;
     
 	$sq = mysqli_query($conn, $o_uid);
@@ -46,7 +46,7 @@ $conn = mysqli_connect($servername, $username, $password,$db);
  
 	$sq = mysqli_query($conn, "SELECT * FROM `game_timer` order by id"); 
   while ($rw = mysqli_fetch_array($sq)) {
-    //  echo $rw['uid'];
+     echo $rw['uid'];
   }
 			$sw = mysqli_query($conn, "INSERT INTO `tptesttable` (`name`, `status`) VALUES ('tpk1',5)");
  
